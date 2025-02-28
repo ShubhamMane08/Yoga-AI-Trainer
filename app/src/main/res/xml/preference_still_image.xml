@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory android:title="@string/pref_category_info">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_info_hide"
+        android:persistent="true"
+        android:title="@string/pref_title_info_hide"/>
+  </PreferenceCategory>
+
+  <PreferenceCategory android:title="@string/pref_category_text_recognition">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_group_recognized_text_in_blocks"
+        android:persistent="true"
+        android:title="@string/pref_title_group_recognized_text_in_blocks"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_show_language_tag"
+        android:persistent="true"
+        android:title="@string/pref_title_show_language_tag"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_show_text_confidence"
+        android:persistent="true"
+        android:title="@string/pref_title_show_text_confidence"/>
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+      android:title="@string/pref_category_object_detection">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_still_image_object_detector_enable_multiple_objects"
+        android:persistent="true"
+        android:title="@string/pref_title_object_detector_enable_multiple_objects"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key_still_image_object_detector_enable_classification"
+        android:persistent="true"
+        android:title="@string/pref_title_object_detector_enable_classification"/>
+
+  </PreferenceCategory>
+
+</PreferenceScreen>

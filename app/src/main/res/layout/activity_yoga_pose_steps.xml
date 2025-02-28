@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YogaPoseStepsActivity"
+    android:background="#DFCCE3"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFCCE3"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/back_arrow"
+            android:background="@drawable/baseline_arrow_back_24"></ImageView>
+
+
+        <TextView
+        android:id="@+id/poseTitle"
+        android:text="Pose Title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="80dp" />
+
+            <ImageButton
+                android:id="@+id/play_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/playvideo"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/poseSteps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="hello"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:textSize="18sp"
+            ></TextView>
+        <Button
+
+            android:id="@+id/startPose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/lavender"
+            android:padding="10dp"
+            android:text="Start Pose"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"></Button>
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/poseSteps"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:padding="20dp"-->
+<!--            android:background="#F8F6DF"-->
+<!--            android:text="Steps"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp" />-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/startPose"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:backgroundTint="@color/lavender"-->
+<!--            android:padding="15dp"-->
+<!--            android:text="Start Pose"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16sp" />-->
+        <!--        <Button-->
+<!--            android:id="@+id/playMusic"-->
+<!--            android:text="Play Music"-->
+<!--            android:textSize="16sp"-->
+<!--            android:backgroundTint="@color/button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:padding="20dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            />-->
+
+    </LinearLayout>
+
+</ScrollView>

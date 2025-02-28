@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-130dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/baseline_arrow_back_24"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img2"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/bungee"
+            android:letterSpacing="0.05"
+            android:text="AI Yoga Trainer"
+            android:textColor="#EC598B"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="64dp"
+            android:layout_height="2dp"
+            android:background="#2E7D32"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to AI Yoga Trainer, your personal guide to achieving perfect yoga postures with the power of Artificial Intelligence and MediaPipe technology. Our app extracts key points from your body and guides you to achieve the correct posture. When you strike the perfect pose, a green light will show, indicating success. We hope this app enhances your yoga practice!"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Features Header -->
+        <TextView
+            android:id="@+id/textViewFeaturesHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Key Features"
+            android:textColor="#9C17B3"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Features List -->
+        <LinearLayout
+            android:id="@+id/linearLayoutFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Feature Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star_about_us"
+                    android:contentDescription="High Accuracy" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" High-precision pose detection for accurate feedback."
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Feature Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star_about_us"
+                    android:contentDescription="Real-Time Feedback" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Real-time guidance to help you perfect each pose."
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Feature Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star_about_us"
+                    android:contentDescription="User Friendly Interface" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Easy-to-use interface suitable for all skill levels."
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Contact Header -->
+        <TextView
+            android:id="@+id/textViewContactHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect with Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Social Media Icons -->
+        <LinearLayout
+            android:id="@+id/linearLayoutSocialMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/facebook"
+                android:contentDescription="Facebook"
+                android:layout_marginEnd="16dp"
+                android:onClick="openFacebook" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/instagram1"
+                android:contentDescription="Instagram"
+                android:layout_marginEnd="16dp"
+                android:onClick="openInstagram" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/twitter"
+                android:contentDescription="Twitter"
+                android:onClick="openTwitter" />
+        </LinearLayout>
+
+        <!-- Version Info -->
+        <TextView
+            android:id="@+id/textViewVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:textSize="14sp"
+            android:textColor="#9E9E9E" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".HomePageActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:text="AI Yoga Guide"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/light_white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="330dp"
+            android:layout_height="323dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/img3"
+            android:layout_marginRight="15dp"/>
+
+
+<!--        <pl.droidsonroids.gif.GifImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="353dp"-->
+<!--            android:layout_height="382dp"-->
+<!--            android:src="@drawable/yogapose" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Yoga is the perfect opportunity to be curious about who you are."
+            android:textColor="@color/button"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/button"
+            android:text="Know More"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/button"
+            android:text="Embrace Yoga Practice"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

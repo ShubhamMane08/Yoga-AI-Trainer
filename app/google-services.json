@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "606709720990",
+    "project_id": "ai-yoga-guide",
+    "storage_bucket": "ai-yoga-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606709720990:android:4e3f7b5c1467115da2188f",
+        "android_client_info": {
+          "package_name": "com.aiyogaguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4fWWowtqki6tfV0To3BSfxQeXE0OV2g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

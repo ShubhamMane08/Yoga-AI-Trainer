@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        />
+<!--overlay user interface for key points-->
+    <com.aiyogaguide.GraphicOverlay
+        android:id="@+id/graphicOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/back_arrow"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/baseline_arrow_back_24"></ImageView>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-dark"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:text="Timing"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:text="AI YOGA GUIDE"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/title"
+        android:background="@color/new_white"
+        />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="580dp"
+        android:background="@color/new_white"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="5dp"
+        android:text="AI YOGA GUIDE"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"   />
+
+
+
+<!--    After completing the yoga successfuly-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/successView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/success"
+        android:background="@color/white"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

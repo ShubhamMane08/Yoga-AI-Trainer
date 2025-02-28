@@ -1,0 +1,13 @@
+<!-- res/drawable/app_logo.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M60,0 C93.137,0 120,26.863 120,60 C120,93.137 93.137,120 60,120 C26.863,120 0,93.137 0,60 C0,26.863 26.863,0 60,0 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,15 C82.091,15 100,32.909 100,55 C100,77.091 82.091,95 60,95 C37.909,95 20,77.091 20,55 C20,32.909 37.909,15 60,15 Z" />
+</vector>
